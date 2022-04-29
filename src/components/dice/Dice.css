@@ -1,0 +1,127 @@
+
+.dice{
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    /* for self alignment */
+    justify-self: center;
+    align-self: center;
+    
+
+    /* for alignment of the text*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.held {
+    background-color: #59E391;
+}
+.dots {
+    width: 80%;
+    height: 80%;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #0B2434;
+    border-radius: 10px;
+}
+
+
+.n1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.n2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.n2 .dot:nth-of-type(2){
+    align-self: flex-end;
+}
+
+.n3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.n3 .dot:nth-of-type(1){
+    align-self: flex-start;
+}
+.n3 .dot:nth-of-type(2){
+    align-self: center;
+}
+.n3 .dot:nth-of-type(3){
+    align-self: flex-end;
+}
+
+.n4 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+.n4 .dot:nth-of-type(1){
+    align-self: start;
+}
+.n4 .dot:nth-of-type(2){
+    align-self: start;
+    justify-self: end;
+}
+.n4 .dot:nth-of-type(3){
+    align-self: end;
+}
+
+.n4 .dot:nth-of-type(4){
+    align-self: end;
+    justify-self: end;
+}
+
+
+.n5 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+.n5 .dot:nth-of-type(1){
+    align-self: start;
+}
+.n5 .dot:nth-of-type(2){
+    align-self: start;
+    justify-self: end;
+}
+.n5 .dot:nth-of-type(3){
+    align-self: end;
+}
+.n5 .dot:nth-of-type(4){
+    align-self: end;
+    justify-self: end;
+}
+.n5 .dot:nth-of-type(5){
+    transform: translate(220%, -320%);
+}
+
+
+.n6 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, 33%);
+}
+.n6 .dot {
+    justify-self: center;
+}
+.n6 .d2 , .n6 .d3 {
+     align-self: center;
+}
+.n6 .d4 , .n6 .d5 {
+    align-self: end;
+}
